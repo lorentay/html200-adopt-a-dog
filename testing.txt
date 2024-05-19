@@ -2,8 +2,9 @@
 
 ## Table of Contents
 1. [General Information](#general-information)
-2. [Testing Environment](#testing-environment)
-3. [Testing](#testing)
+2. [Research on Users and Devices](#research-on-users-and-devices)
+3. [Testing Environment](#testing-environment)
+4. [Testing](#testing)
     1. [Home Page](#1-home-page)
     2. [Navigation Links](#2-navigation-links)
     3. [Buttons](#3-buttons)
@@ -15,14 +16,38 @@
     9. [Cross-Device Compatibility](#9-cross-device-compatibility)
     10. [Accessibility Testing](#10-accessibility-testing)
     11. [Browser Compatibility](#11-browser-compatibility)
-4. [Test Summary](#test-summary)
-5. [Future Testing Plans](#future-testing-plans)
+5. [Test Summary](#test-summary)
+6. [Future Testing Plans](#future-testing-plans)
 
 ## General Information
 - **Website Name:** [http://www.adoptadog.com](https://www.adoptadog.com)
 - **Author:** Susan Loren-Taylor
 - **Date:** May 19, 2024
 - **Purpose:** The following information outlines the testing that was completed to verify the functionality, performance, and accessibility of the Adopt-A-Dog website.
+
+## Research on Users and Devices
+
+### Users
+- **Primary Audience:** Potential dog adopters of all ages.
+- **User Needs:**
+  - Easy navigation to browse available dogs for adoption.
+  - Detailed information about each dog, including photos, personality traits, and adoption fees.
+  - Simple and secure adoption process.
+  - Access to resources on dog care and training.
+
+### Devices
+- **Desktop and Laptop Computers:**
+  - Screen resolutions: 1024x768 and higher
+  - Operating systems: Windows, macOS, Linux
+  - Browsers: Chrome, Firefox, Safari, Edge
+- **Tablets:**
+  - Screen sizes: 7 to 12 inches
+  - Operating systems: iOS, Android
+  - Browsers: Chrome, Safari, Firefox
+- **Mobile Phones:**
+  - Screen sizes: 4 to 6.5 inches
+  - Operating systems: iOS, Android
+  - Browsers: Chrome, Safari, Firefox
 
 ## Testing Environment
 - **Operating System:** macOS Sonoma 14.4.1
