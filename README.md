@@ -1,6 +1,6 @@
 # Adopt-a-Dog Website
 
-Welcome to the Adopt-a-Dog website! We designed it to help you find a dog that suits your lifestyle and provide resources for caring for your dog.
+Welcome to the Adopt-a-Dog website! We designed it to help you find a dog that suits your lifestyle and to provide resources for caring for your dog.
 
 ## Features
 
