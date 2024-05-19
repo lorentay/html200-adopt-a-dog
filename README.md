@@ -27,7 +27,7 @@ To get started with the Adopt-a-Dog website:
 3. Remember to check out our blog for helpful tips!
 
 ## Contribute
-We welcome suggestions to help improve the Adopt-a-Dog website. We'd love to hear from you if you'd like to contribute to our blog or suggest new features. Please submit feedback or contributions to [contribute@adoptadog.com](mailto:contribute@adoptadog.com).
+We welcome suggestions to help improve the Adopt-a-Dog website. We'd love to hear from you if you'd like to contribute to our blog or suggest new features. Please submit suggestions or contributions to [contribute@adoptadog.com](mailto:contribute@adoptadog.com).
 
 ## Support
 If you have any questions or need assistance with the Adopt-a-Dog website, please don't hesitate to contact our support team at [support@adoptadog.com](mailto:support@adoptadog.com). We're here to help!
