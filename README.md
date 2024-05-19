@@ -8,6 +8,7 @@ Welcome to the Adopt-a-Dog website! We designed it to help you find a dog that s
 3. [Contribute](#contribute)
 4. [Support](#support)
 5. [License](#license)
+6. [Testing](#testing)
 
 ## Features
 
@@ -34,3 +35,6 @@ If you have any questions or need assistance with the Adopt-a-Dog website, pleas
 
 ## License
 All rights reserved. This project and its contents are proprietary and may not be reproduced, distributed, modified, or used in any form without the express written permission of the copyright holder.
+
+## Testing
+For information on the testing of the Adopt-a-Dog website, please refer to [Testing Documentation](https://www.adoptadog.com/testing.txt)
