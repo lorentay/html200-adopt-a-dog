@@ -5,13 +5,13 @@ Welcome to the Adopt-a-Dog website! We designed it to help you find a dog that s
 ## Features
 
 ### Dog Adoption Listings
-You can browse adorable dogs of all sizes and personalities that are available for adoption. Each listing includes a photo, description, personality traits, and adoption fee. Find the dog that's the perfect match for your lifestyle.
+You can browse adorable dogs of all sizes and personalities available for adoption. Each listing includes a photo, description, personality traits, and adoption fee. Find the dog that's the perfect match for your lifestyle.
 
 ### Easy Adoption Process
 Our website makes adopting your new family member and best friend simple. Click the "Adopt" button on the dog's profile to add it to your shopping cart. Then proceed to checkout and complete your adoption.
 
 ### Informative Blog
-Our blog offers helpful articles on dog care, training tips, walking advice, and informative topics about owning a dog. We hope you find something useful.
+Our blog offers helpful articles on dog care, training tips, walking advice, and other informative topics about owning a dog. We hope you find something useful.
 
 ## Getting Started
 To get started with the Adopt-a-Dog website:
@@ -20,7 +20,10 @@ To get started with the Adopt-a-Dog website:
 3. Remember to check out our blog for helpful tips!
 
 ## Contribute
-We welcome suggestions to help improve the Adopt-a-Dog website. We'd love to hear from you if you'd like to contribute to our blog or suggest new features. Please submit any feedback or contributions to [contribute@adoptadog.com](mailto:contribute@adoptadog.com).
+We welcome suggestions to help improve the Adopt-a-Dog website. We'd love to hear from you if you'd like to contribute to our blog or suggest new features. Please submit feedback or contributions to [contribute@adoptadog.com](mailto:contribute@adoptadog.com).
 
 ## Support
 If you have any questions or need assistance with the Adopt-a-Dog website, please don't hesitate to contact our support team at [support@adoptadog.com](mailto:support@adoptadog.com). We're here to help!
+
+## License
+All rights reserved. This project and its contents are proprietary and may not be reproduced, distributed, modified, or used in any form without the express written permission of the copyright holder.
