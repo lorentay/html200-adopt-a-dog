@@ -2,6 +2,13 @@
 
 Welcome to the Adopt-a-Dog website! We designed it to help you find a dog that suits your lifestyle and to provide resources for caring for your dog.
 
+## Table of Contents
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+3. [Contribute](#contribute)
+4. [Support](#support)
+5. [License](#license)
+
 ## Features
 
 ### Dog Adoption Listings
@@ -15,7 +22,7 @@ Our blog offers helpful articles on dog care, training tips, walking advice, and
 
 ## Getting Started
 To get started with the Adopt-a-Dog website:
-1. Visit [www.adoptadog.com](www.adoptadog.com) and start browsing our adoption listings.
+1. Visit [www.adoptadog.com](https://www.adoptadog.com) and start browsing our adoption listings.
 2. If you find a dog you're interested in, click the "Adopt" button to add them to your shopping cart.
 3. Remember to check out our blog for helpful tips!
 
