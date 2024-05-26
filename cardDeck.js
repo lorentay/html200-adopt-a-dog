@@ -14,7 +14,7 @@ function printDeck() {
     for (let value of values) {
       // Combines the suit and value
       let card = `${value} of ${suit}`;
-      // Add sthe card to the deck
+      // Adds the card to the deck
       deck.push(card);
     }
   }
