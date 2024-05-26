@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Checkout</title>
 </head>
 <body>
   <header>
     <div class="banner">
-      <img src="images/adoptadog-logo.svg" class="banner-logo" alt="adopt a dog logo" style="background-color: rgb(185, 184, 184)" height="100">
+      <img src="images/adoptadog-logo.svg" class="banner-logo" alt="adopt a dog logo">
         <h1 class="headline">Seattle's premiere dog adoption agency</h1>
-          <nav class="nav-menu">
+        <div class="cart">
+          <div class="cart-content">
+          <img src="images/cart-icon.svg" class="cart-icon" height="20" alt="shopping cart icon"><br>
+          <span class="cart-amount">$1234.56</span><br> 
+        </div>
+          <a href="checkout.html" class="button checkout">Checkout</a><br><br>
+        </div>
+      </div>
+      <div class="nav-container">
+        <nav class="nav-menu">
             <ul> 
               <li><a href="index.html">Home</a></li> 
               <li><a href="dogs.html">Dogs</a></li>
               <li><a href="blog.html">Blog</a></li>
               </ul> 
             </nav>
-      <div class="cart">
-          <img src="images/cart-icon.svg" class="cart-icon" style="background-color: rgb(185, 184, 184)" height="20" alt="shopping cart icon"><br>
-          <span class="cart-amount">$1234.56</span><br> 
-          <a href="checkout.html" class="button checkout">Checkout</a><br><br>
-      </div>
-    </div>
+        </div>
   </header>
-
+  <div class="content-container"> 
       <h1>Checkout</h1>
       <form>
         <label for="name">Name</label><br>
@@ -75,9 +86,12 @@
 
         <label for="pickup-location">Pickup Location</label><br>
         <select id="pickup-location" name="pickup-location" class="pickup-location select-pickup-location">
-          <option value="location1">Location 1</option>
-          <option value="location2">Location 2</option>
-          <option value="location3">Location 3</option>
+          <option value="location1">Seattle Humane Society</option>
+          <option value="location2">Emerald City Pet Rescue</option>
+          <option value="location3">Forgotten Dogs Rescue</option>
+          <option value="location3">Homeward Pet</option>
+          <option value="location3">Pasado's Safe Haven</option>
+
         </select>
       </form>
 
@@ -98,25 +112,30 @@
 
     <h4>Total Adoption Cost</h4>
       <p id="total-cost" class="total-cost paragraph-total-cost">$1234.56</p>
+  </div>
 
     <!--submit button -->
-    <button type="submit" class="submit-button">Submit</button>
+    <div class="submit-button-container">
+     <button type="submit" class="button submit-button">Submit</button>
+    </div>
+  </div>
+
     
-      <!--footer content-->
-      <div class="footer">
-        <img src="images/adoptadog-logo.svg" class="footer-logo" alt="adopt a dog logo" style="background-color: rgb(185, 184, 184)" height="100">
-          <div class="footer-text">
-              <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
-                  esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-                  <nav class="footer-menu">
-                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="dogs.html">Dogs</a></li>
-                        <li><a href="#">Contact</a></li>
-                      </ul>
-                  </nav>
-              <p><small>&copy;2018 Adoptadog LLC | Seattle, WA</small></p>
-          </div>
-      </div> 
+    <!--footer content-->
+    <div class="footer-banner">
+      <img src="images/adoptadog-logo.svg" class="footer-logo" alt="adopt a dog logo">
+        <div class="footer-text">
+          <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+            esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+            <nav class="footer-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="dogs.html">Dogs</a></li>
+                  <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+            <p>&copy;2018 Adoptadog LLC&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Seattle, WA</p>
+        </div>
+    </div>
 </body>
 </html>

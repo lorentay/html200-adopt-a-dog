@@ -2,30 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Adopt A Dog</title>
 </head>
 <body>
     <header>
       <div class="banner">
-        <img src="images/adoptadog-logo.svg" class="banner-logo" alt="adopt a dog logo" style="background-color: rgb(185, 184, 184)" height="100">
+        <img src="images/adoptadog-logo.svg" class="banner-logo" alt="adopt a dog logo">
           <h1 class="headline">Seattle's premiere dog adoption agency</h1>
-            <nav class="nav-menu">
+          <div class="cart">
+            <div class="cart-content">
+            <img src="images/cart-icon.svg" class="cart-icon" height="20" alt="shopping cart icon"><br>
+            <span class="cart-amount">$1234.56</span><br> 
+          </div>
+            <a href="checkout.html" class="button checkout">Checkout</a><br><br>
+          </div>
+        </div>
+        <div class="nav-container">
+          <nav class="nav-menu">
               <ul> 
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="dogs.html">Dogs</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 </ul> 
               </nav>
-        <div class="cart">
-            <img src="images/cart-icon.svg" class="cart-icon" style="background-color: rgb(185, 184, 184)" height="20" alt="shopping cart icon"><br>
-            <span class="cart-amount">$1234.56</span><br> 
-            <a href="checkout.html" class="button checkout">Checkout</a><br><br>
-        </div>
-      </div>
+          </div>
     </header>
-    
+<div class="content-container"> 
 <div class="intro-section">
   <img src="images/home-intro.jpg" class="intro-image" alt="A golden retriever smiling, getting a hug from its male owner">
     <div class ="intro-text">
@@ -41,7 +51,7 @@
     </div>     
 </div>
 
-<div class="dog-cards">
+<div class="dog-cards-container">
   <div class="dog-card">
       <img src="images/murphy-card.jpg" class="dog-image" alt="A picture of a large brown dog with soulfull eyes and a white muzzle">
       <h2>Murphy</h2>
@@ -69,7 +79,7 @@
       <p>He wants to go by car I want to be very restful
         they are rejected as they will be eaten I am willing <br>
         to pay for that matter, those who were robbed</p>
-      <a href="images/checkout.html" class="button adopt">Adopt</a>
+      <a href="checkout.html" class="button adopt">Adopt</a>
     </div>
 
     <div class="dog-card">
@@ -79,7 +89,7 @@
       <p>He wants to go by car I want to be very restful
         they are rejected as they will be eaten I am willing <br>
         to pay for that matter, those who were robbed</p>
-      <a href="images/checkout.html" class="button adopt">Adopt</a>
+      <a href="checkout.html" class="button adopt">Adopt</a>
     </div>
 
     <div class="dog-card">
@@ -89,7 +99,7 @@
       <p>He wants to go by car I want to be very restful
         they are rejected as they will be eaten I am willing <br>
         to pay for that matter, those who were robbed</p>
-      <a href="images/checkout.html" class="button adopt">Adopt</a>
+      <a href="checkout.html" class="button adopt">Adopt</a>
     </div>
 
     <div class="dog-card">
@@ -99,7 +109,7 @@
       <p>He wants to go by car I want to be very restful
         they are rejected as they will be eaten I am willing <br>
         to pay for that matter, those who were robbed</p>
-      <a href="images/checkout.html" class="button adopt">Adopt</a>
+      <a href="checkout.html" class="button adopt">Adopt</a>
     </div>
 
     <div class="dog-card">
@@ -109,7 +119,7 @@
       <p>He wants to go by car I want to be very restful
         they are rejected as they will be eaten I am willing <br>
         to pay for that matter, those who were robbed</p>
-      <a href="images/checkout.html" class="button adopt">Adopt</a>
+      <a href="checkout.html" class="button adopt">Adopt</a>
       </div>
 
     <div class="dog-card">
@@ -119,16 +129,20 @@
       <p>He wants to go by car I want to be very restful
         they are rejected as they will be eaten I am willing <br>
         to pay for that matter, those who were robbed</p>
-      <a href="images/checkout.html" class="button adopt">Adopt</a>
+      <a href="checkout.html" class="button adopt">Adopt</a>
     </div>
 </div>
 
+
     <!-- see more dogs button -->
-    <a href="dogs.html" class="button more-dogs">See More Dogs</a>
+    <div class="more-dogs-container">
+      <a href="dogs.html" class="button more-dogs">See More Dogs</a>
+    </div>
+  </div>  
   
     <!--footer content-->
-    <div class="footer">
-      <img src="images/adoptadog-logo.svg" class="footer-logo" alt="adopt a dog logo" style="background-color: rgb(185, 184, 184)" height="100">
+    <div class="footer-banner">
+      <img src="images/adoptadog-logo.svg" class="footer-logo" alt="adopt a dog logo">
         <div class="footer-text">
           <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
             esseque invenienihil imaximu scideru ptistiusam consequunt</p>
@@ -139,8 +153,9 @@
                   <li><a href="#">Contact</a></li>
                   </ul>
                 </nav>
-            <p><small>&copy;2018 Adoptadog LLC | Seattle, WA</small></p>
+            <p>&copy;2018 Adoptadog LLC&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Seattle, WA</p>
         </div>
     </div>
+ 
 </body>
 </html>
