@@ -1,3 +1,5 @@
+//calculator.js
+
 // Four variables with values that do not change
 const a = 150;
 const b = 5;
@@ -20,7 +22,7 @@ decrement--;
 
 const negative = -c;              
 
-// console log results
+// Console log results
 console.log("a + b:", addition);             
 console.log("d - c:", subtraction);          
 console.log("a * c:", multiplication);       
