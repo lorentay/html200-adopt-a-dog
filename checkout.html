@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Checkout</title>
 </head>
+
 <body>
   <header>
     <div class="banner">
@@ -35,90 +36,126 @@
             </nav>
         </div>
   </header>
+
   <div class="content-container"> 
       <h1>Checkout</h1>
-      <form>
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" class="input-name"><br>
-
-        <label for="email">Email Address</label><br>
-        <input type="email" id="email" name="email" class="input-email"><br>
-
-        <label for="street">Street Address</label><br>
-        <input type="text" id="street" name="street" class="input-street"><br>
-
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" class="input-city">
-
-        <label for="state">State</label>
-        <select id="state" name="state" class="input-state">
-            <option value="AK">Alaska</option>
-            <option value="CA">California</option>
-            <option value="CO">Colorado</option>
-            <option value="CT">Connecticut</option>
-            <option value="DE">Delaware</option>
-            <option value="DC">District of Columbia</option>
-            <option value="HI">Hawaii</option>
-            <option value="IL">Illinois</option>
-            <option value="IA">Iowa</option>
-            <option value="KS">Kansas</option>
-            <option value="ME">Maine</option>
-            <option value="MD">Maryland</option>
-            <option value="MA">Massachusetts</option>
-            <option value="MI">Michigan</option>
-            <option value="MN">Minnesota</option>
-            <option value="OR">Oregon</option>
-            <option value="WA">Washington</option>
-          </select>
-
-        <label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="zip" class="zip"><br>
-
-        <label>First Time Adopter?</label><br>
-        <label>
-            <input type="radio" name="first-time-adopter" class="first-time-adopter input-first-time-adopter" value="yes">
-            Yes
-        </label><br>
-        <label>
-            <input type="radio" name="first-time-adopter" class="first-time-adopter input-first-time-adopter" value="no">
-            No
-        </label><br>
-
-        <label for="pickup-location">Pickup Location</label><br>
-        <select id="pickup-location" name="pickup-location" class="pickup-location select-pickup-location">
-          <option value="location1">Seattle Humane Society</option>
-          <option value="location2">Emerald City Pet Rescue</option>
-          <option value="location3">Forgotten Dogs Rescue</option>
-          <option value="location3">Homeward Pet</option>
-          <option value="location3">Pasado's Safe Haven</option>
-
-        </select>
-      </form>
-
-    <h4>Dogs Adopted</h4>
-      <div class="adopted-dogs section-adopted dogs">
-        <div class="adopted-dog-info">
-          <img src="images/lucas-checkout.jpg" class="adopted-dog" alt="Picture of Lucas">
-          <h4 class="dog-name">Lucas</h4>
-          <p class="adoption-cost"><strong>Cost to Adopt:</strong>&nbsp;<span>$123.45</span></p>
+      <form method="GET">
+        <div class="form-group">
+          <label>Name<br>
+            <input type="text" name="applicantName">
+          </label>
         </div>
+
+        <div class="form-group">
+          <label>Email Address<br>
+            <input type="email" name="applicantEmail">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>Street Address<br>
+            <input type="text" name="applicantStreet">
+          </label>
+        </div>
+
+      <div class="form-inline">
+        <div class="form-group">
+          <label>City<br>
+            <input type="text" name="applicantCity">
+          </label>
+        </div>
+      
+       
+        <div class="form-group">
+          <label>State<br>
+            <select id="state" name="applicantState">
+              <option value="AK">Alaska</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District of Columbia</option>
+              <option value="HI">Hawaii</option>
+              <option value="IL">Illinois</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="OR">Oregon</option>
+              <option value="WA">Washington</option>
+            </select>
+           </label>
+         </div>
         
-        <div class="adopted-dog-info">
-          <img src="images/duffy-checkout.jpg" class="adopted-dog" alt="Picture of Duffy">
-          <h4 class="dog-name">Duffy</h4>
-          <p class="adoption-cost"><strong>Cost to Adopt:</strong>&nbsp;<span>$123.45</span></p>
+
+        <div class="form-group">
+          <label>Zip Code<br>
+            <input type="text" name="applicantZip">
+          </label>
         </div>
       </div>
 
-    <h4>Total Adoption Cost</h4>
+    
+        <div class="form-group">
+          <label class="heading">First Time Adopter?</label><br>
+          <div class="radio-group">
+          <label>
+            <input type="radio" name="first-time-adopter" value="yes">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="first-time-adopter" value="no">
+            No
+          </label>
+        </div>
+      </div>
+      
+    <div class="form-group">
+        <label>Pickup Location</label>
+        <select id="pickup-location" name="pickupLocation">
+          <option value="location1">Seattle Humane Society</option>
+          <option value="location2">Emerald City Pet Rescue</option>
+          <option value="location3">Forgotten Dogs Rescue</option>
+          <option value="location4">Homeward Pet</option>
+          <option value="location5">Pasado's Safe Haven</option>
+        </select>
+    </div>
+  </form>
+
+
+    <h2>Dogs Adopted</h2>
+      <div class="adopted-dogs">
+        <div class="adopted-dog-info">
+          <img src="images/lucas-checkout.jpg" class="adopted-dog" alt="Picture of Lucas">
+          <div class="dog-details">
+          <h4 class="dog-name">Lucas</h4>
+          <p class="adoption-cost"><strong>Cost to Adopt:</strong>&nbsp;<span>$123.45</span></p>
+        </div>
+      </div>
+        
+        <div class="adopted-dog-info">
+          <img src="images/duffy-checkout.jpg" class="adopted-dog" alt="Picture of Duffy">
+          <div class="dog-details">
+          <h4 class="dog-name">Duffy</h4>
+          <p class="adoption-cost"><strong>Cost to Adopt:</strong>&nbsp;<span>$123.45</span></p>
+         </div>
+      </div>
+    </div>
+
+    <div class="total-adoption-cost">
+      <h2>Total Adoption Cost</h2>
       <p id="total-cost" class="total-cost paragraph-total-cost">$1234.56</p>
-  </div>
+    </div>
+    
 
     <!--submit button -->
-    <div class="submit-button-container">
-     <button type="submit" class="button submit-button">Submit</button>
+     <div class="submit-button-container">
+       <button type="submit" class="button">Submit</button>
+     </div>
     </div>
-  </div>
 
     
     <!--footer content-->
