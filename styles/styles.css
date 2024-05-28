@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0a3c60;
+}
+
+p {
+    color: #3d3d3d;
+} 
+
+.content-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-image: url("../images/header-image.jpg");  
+    background-size: cover;
+    width: 100%;
+    height: 15rem; 
+    padding: 20px;
+}
+.banner-logo {
+    height: 75px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.headline {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: #81b640;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+/* shopping cart */
+.cart {
+    position: absolute;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+.cart-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.cart-icon {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.cart-amount {
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+.button.checkout {
+    background-color: #81b640;
+    font-size: small;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+}
+
+
+/* top navigation menu */
+.nav-container {
+    background-color: #ececec;
+    padding: 10px 0;
+}
+.nav-menu {
+    margin-left: 75px;
+    text-align: left;
+}
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 15px;
+}
+.nav-menu ul li {
+    margin: 0;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #0a3c60;
+    font-weight: bold;
+}
+.nav-menu ul li a:hover {
+    text-decoration: underline;
+}
+.nav-menu ul li::after {
+    content: "/";
+    margin-left: 1.25rem;
+}
+.nav-menu ul li:last-child::after {
+    content: none;
+}
+
+
+/* intro section */
+.intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+.intro-image {
+    max-width: 30%;
+    height: auto;
+    margin-right: 20px; 
+}
+.intro-text {
+    max-width: 50%;
+    flex: 1;
+    padding-left: 20px;
+}
+.intro-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.intro-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.more-dogs-heading {
+    margin-left: 20px;
+}
+.blog-heading {
+    margin-left: 20px;
+}
+
+/* dog cards */
+.dog-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+.dog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.dog-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.dog-card h2 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px 0;
+}
+.dog-card p {
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+.button {
+    background-color: #81b640;
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+
+}
+.button:hover {
+    background-color: #218838;
+}
+.adopt {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* see more dogs button */
+.more-dogs-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 2px;
+}
+.more-dogs {
+    background-color: #ececec !important; 
+    color: #0a3c60 !important;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.more-dogs:hover {
+    background-color: gray !important;
+}
+
+
+/* general checkout form styles */
+h2 {
+    margin-bottom: 5px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 95%;
+    height: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+.form-inline .form-group {
+    flex: 1;
+}
+.form-inline .form-group input,
+.form-inline .form-group select {
+    width: 80%;
+}
+label {
+    margin-bottom: 10px;
+}
+
+
+
+/* radio button styles */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+.radio-group label {
+    margin-right: 10px;
+    color: #3d3d3d;
+}
+
+
+/* adoption submit button */
+.submit-button-container {
+    padding-top: 0; 
+    padding-bottom: 20px;
+}
+.button {
+    font-size: 1rem;
+    border: none;
+    background-color: #81b640;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.button:hover {
+    background-color: #45a049;
+}
+
+
+/* adopted dog styles */
+.adopted-dogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.adopted-dog-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: calc(40% - 10px);
+}
+.dog-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dog-name {
+    margin: 0;
+    font-size: 1.2rem
+}
+.adoption-cost {
+    margin: 0;
+    font-size: 1rem;
+    color: #3d3d3d
+}
+.total-cost {
+    color: #3d3d3d;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+.total-adoption-cost {
+    margin-top: 25px;
+}
+.total-adoption-cost {
+    margin-bottom: 0;
+}
+
+
+/* footer styles */
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem; 
+    padding: 20px;
+    background-color: #0a3c60; 
+}
+.footer-banner p {
+    color: #FFFFFF;
+}
+.footer-logo {
+    height: 75px;
+    width: auto;
+    margin-top: 20px;
+}
+.footer-text {
+    text-align: center; 
+    font-size: small; 
+    color: #FFFFFF; 
+}
+.footer-menu ul {
+    display: inline-flex;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF; 
+}
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+.footer-menu ul li::after {
+    content: "/";
+    margin-left: 1.25rem;
+}
+.footer-menu ul li:last-child::after {
+    content: none;
+}
+
+
+/* responsive design */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center; 
+    }
+    .intro-image {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    .intro-text {
+        max-width: 100%; 
+    }
+}
+@media (max-width: 768px) {
+    .form-inline {
+        flex-direction: column;
+    }
+    .form-group input,
+    .form-group select {
+        width: 100%;
+    }
+    .adopted-dog-info {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .dog-cards-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media (max-width: 768px) {
+    .dog-cards-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media (max-width: 480px) {
+    .dog-cards-container {
+        grid-template-columns: 1fr; 
+    }
+}
