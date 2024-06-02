@@ -1,0 +1,14 @@
+// Challenge 1: Five Strings Array
+
+let springFlowers = ['Peony', 'Iris', 'Lilac', 'Lily of the Valley', 'Tulip'];
+
+// Adds Hyacinth to the end of the array
+springFlowers.push('Hyacinth');
+
+// Removes the third element, Lilac
+springFlowers.splice(2, 1); 
+
+// Creates a string of the elements, separated by a comma
+let springFlowersString = springFlowers.join(", ");
+
+console.log(springFlowersString);
