@@ -5,7 +5,7 @@ let springFlowers = ['Peony', 'Iris', 'Lilac', 'Lily of the Valley', 'Tulip'];
 // Adds Hyacinth to the end of the array
 springFlowers.push('Hyacinth');
 
-// Removes, Lilac, the third element
+// Removes the third element, Lilac
 springFlowers.splice(2, 1); 
 
 // Creates a string of the elements, separated by a comma
