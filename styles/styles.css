@@ -19,9 +19,11 @@ p {
 } 
 
 .content-container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3.13rem;
+    padding-right: 3.13rem;
 }
+
+
 
 
 .banner {
@@ -36,10 +38,10 @@ p {
     padding: 20px;
 }
 .banner-logo {
-    height: 75px;
+    height: 4.7rem;
     width: auto;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
 }
 .headline {
     font-family: "Playfair Display", serif;
@@ -48,15 +50,15 @@ p {
     font-weight: bold;
     font-style: italic;
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 /* shopping cart */
 .cart {
     position: absolute;
     height: 50px;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     text-align: right;
 }
 .cart-content {
@@ -70,7 +72,7 @@ p {
 }
 .cart-amount {
     color: #FFFFFF;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 .button.checkout {
     background-color: #81b640;
@@ -78,7 +80,7 @@ p {
     color: #FFFFFF;
     text-decoration: none;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 1.25rem;
     margin-bottom: 10px;
     padding: 5px 15px;
 }
@@ -125,17 +127,17 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 .intro-image {
     max-width: 30%;
     height: auto;
-    margin-right: 20px; 
+    margin-right: 1.25rem; 
 }
 .intro-text {
     max-width: 50%;
     flex: 1;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 .intro-heading {
     font-size: 2rem;
@@ -146,18 +148,18 @@ p {
     line-height: 1.5;
 }
 .more-dogs-heading {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 .blog-heading {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 /* dog cards */
 .dog-cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    padding: 20px;
+    gap: 1.25rem; 
+    padding: 1.25rem;
 }
 .dog-card {
     display: flex;
@@ -199,7 +201,7 @@ p {
     text-decoration: none;
     cursor: pointer;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 10px 1.25rem;
 
 }
 .button:hover {
@@ -215,14 +217,14 @@ p {
 .more-dogs-container {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 2px;
 }
 .more-dogs {
     background-color: #ececec !important; 
     color: #0a3c60 !important;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 10px 1.25rem;
 }
 .more-dogs:hover {
     background-color: gray !important;
@@ -286,7 +288,7 @@ input[type="radio"] {
 /* adoption submit button */
 .submit-button-container {
     padding-top: 0; 
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 .button {
     font-size: 1rem;
@@ -308,12 +310,12 @@ input[type="radio"] {
 .adopted-dogs {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .adopted-dog-info {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     width: calc(40% - 10px);
 }
 .dog-details {
@@ -342,6 +344,93 @@ input[type="radio"] {
     margin-bottom: 0;
 }
 
+/* contact page styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.column {
+    flex: 1 1 100%;
+    padding: 1.2rem;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.2rem;
+}
+
+.contact-info a {
+    display: block;
+    margin: 10px 0;
+    color: #0a3c60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 1.2rem 1.2rem;
+    background-color: #81b640;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+legend {
+    font-weight: bold;
+}
+
+/* checkbox styles */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: .91rem;
+}
+.checkbox-group input {
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+}
+.checkbox-group label {
+    margin: 0;
+}
 
 /* footer styles */
 .footer-banner {
@@ -351,7 +440,7 @@ input[type="radio"] {
     align-items: center;
     width: 100%;
     height: 15rem; 
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #0a3c60; 
 }
 .footer-banner p {
@@ -360,7 +449,7 @@ input[type="radio"] {
 .footer-logo {
     height: 75px;
     width: auto;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .footer-text {
     text-align: center; 
@@ -400,7 +489,7 @@ input[type="radio"] {
     .intro-image {
         max-width: 100%; 
         margin-right: 0; 
-        margin-bottom: 20px; 
+        margin-bottom: 1.25rem; 
     }
     .intro-text {
         max-width: 100%; 
@@ -419,6 +508,12 @@ input[type="radio"] {
     }
     .button {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        flex: 1 1 45%;
     }
 }
 @media (max-width: 1200px) {
