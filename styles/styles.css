@@ -351,48 +351,40 @@ input[type="radio"] {
     justify-content: space-between;
     padding: 1.25rem;
 }
-
 .column {
     flex: 1 1 100%;
-    padding: 1.2rem;
+    padding: 1.25rem;
 }
-
 .contact-info {
     text-align: left;
 }
-
 .contact-info img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
 }
-
 .contact-info a {
     display: block;
-    margin: 10px 0;
+    margin: .6rem 0;
     color: #0a3c60;
     text-decoration: none;
     font-weight: bold;
 }
-
 .contact-info a:hover {
     text-decoration: underline;
 }
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-
 input, textarea, select {
     width: 95%;
-    padding: 10px;
+    padding: .6rem;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
 }
-
 button {
     padding: 1.2rem 1.2rem;
     background-color: #81b640;
@@ -402,11 +394,9 @@ button {
     cursor: pointer;
     font-size: 1rem;
 }
-
 button:hover {
     background-color: #218838;
 }
-
 fieldset {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -424,7 +414,7 @@ legend {
     margin-bottom: .91rem;
 }
 .checkbox-group input {
-    margin-right: 10px;
+    margin-right: .6rem;
     width: auto;
     height: auto;
 }
@@ -447,7 +437,7 @@ legend {
     color: #FFFFFF;
 }
 .footer-logo {
-    height: 75px;
+    height: 4.6rem;
     width: auto;
     margin-top: 1.25rem;
 }
@@ -462,7 +452,7 @@ legend {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 15px;
+    gap: 1.25rem;
 }
 .footer-menu ul li a {
     text-decoration: none;
@@ -494,6 +484,7 @@ legend {
     .intro-text {
         max-width: 100%; 
     }
+
 }
 @media (max-width: 768px) {
     .form-inline {
@@ -508,6 +499,10 @@ legend {
     }
     .button {
         width: 100%;
+    }
+    input[type="radio"] {
+        width: auto;
+        height: auto;
     }
 }
 
