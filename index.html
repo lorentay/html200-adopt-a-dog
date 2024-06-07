@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares R Us</title>
+</head>
+  <h1>Welcome to Squares R Us+</h1>
+    <button onclick="squareNumber()">Square a Number!</button><br><br>
+    <button onclick="multiplyNumbers()">Multiply Two Numbers!</button>
+
+
+<script>
+  function squareNumber() {
+    let input = prompt('Enter a number');
+    let number = Number(input);
+    let result = number * number;
+        
+    alert('Ta-da! The square of your number is: ' + result);
+    }
+        
+    function multiplyNumbers() {
+      let input1 = prompt('Enter the first number');
+      let number1 = Number(input1);
+      let input2 = prompt('Enter the second number');
+      let number2 = Number(input2);
+      let result = number1 * number2;
+            
+      alert('Ta-da! The product of your numbers is: ' + result);
+    }
+</script>
+</body>
+</html>
