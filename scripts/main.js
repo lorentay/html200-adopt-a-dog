@@ -1,32 +1,17 @@
-// Function to handle photo click and alert dog's information
-function displayDogInfo(event) {
-    const element = event.target;
+let totalAdoptionFee = 0;
+
+function displayDogInfo(element) {
     const name = element.getAttribute('data-name');
     const breed = element.getAttribute('data-breed');
     const fee = element.getAttribute('data-fee');
 
-    alert(`Name: ${name}\nBreed: ${breed}\nAdoption Fee: $${fee}`);
+    alert(`Dog's Name: ${name}\nBreed: ${breed}\nAdoption Fee: $${fee}`);
 }
 
-// Variable to keep track of the total adoption fee
-let totalAdoptionFee = 0;
-
-// Function to handle adoption button click and update total adoption fee
-function addAdoptionFee(event) {
-    const element = event.target;
-    const fee = parseFloat(element.getAttribute('data-fee'));
-
+function addAdoption(event, element) {
+    event.preventDefault(); 
+    const fee = +element.getAttribute('data-fee'); // Convert the fee string to a number using the unary plus operator
     totalAdoptionFee += fee;
 
-    alert(`Total Adoption Fee: $${totalAdoptionFee.toFixed(2)}`);
+    alert(`Total adoption fees: $${totalAdoptionFee.toFixed(2)}`);
 }
-
-// Attach event listeners to all dog images
-document.querySelectorAll('.dog-image').forEach(img => {
-    img.addEventListener('click', displayDogInfo);
-});
-
-// Attach event listeners to all adopt buttons
-document.querySelectorAll('.adopt').forEach(button => {
-    button.addEventListener('click', addAdoptionFee);
-});
