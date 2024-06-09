@@ -1,4 +1,4 @@
-let totalAdoptionFee = 0;
+// Displays name, breed, and adoption fee, when a dog's photo is clicked
 
 function displayDogInfo(element) {
     const name = element.getAttribute('data-name');
@@ -8,9 +8,13 @@ function displayDogInfo(element) {
     alert(`Dog's Name: ${name}\nBreed: ${breed}\nAdoption Fee: $${fee}`);
 }
 
+// Adds the adoption fee to the total each time a dog's Adopt button is clicked
+
+let totalAdoptionFee = 0;
+
 function addAdoption(event, element) {
     event.preventDefault(); 
-    const fee = +element.getAttribute('data-fee'); // Convert the fee string to a number using the unary plus operator
+    const fee = +element.getAttribute('data-fee');
     totalAdoptionFee += fee;
 
     alert(`Total adoption fees: $${totalAdoptionFee.toFixed(2)}`);
