@@ -1,4 +1,4 @@
-// Displays name, breed, and adoption fee, when a dog's photo is clicked
+// Displays name, breed, and adoption fee when a dog's photo is clicked
 
 function displayDogInfo(element) {
     const name = element.getAttribute("data-name");
