@@ -1,73 +1,123 @@
-let balance = 1000; // Initial balance
+// Sets the starting balance
+let balance = 1000;
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    displayMessage("Welcome to the bank application. Your starting balance is " + balance.toFixed(2) + ". Choose an action: W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
-});
+// Creates the initial message and then invokes it
+function initializeMessage() {
+  displayMessage(
+    `Your starting balance is $${balance.toFixed(2)}. <br><br> Choose an action: <br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)`
+  );
+}
 
+initializeMessage();
+
+// Function to perform the switch actions (eliminate extra spaces, convert input to uppercase, clear the input box)
 function performAction() {
-    const inputField = document.getElementById('input');
-    const action = inputField.value.trim().toUpperCase();
-    inputField.value = ''; // Clear the input field
+  const inputBox = document.getElementById("input");
+  const action = inputBox.value.trim().toUpperCase();
+  inputBox.value = ""; 
 
-    switch(action) {
-        case 'Q':
-            quit();
-            break;
-        case 'W':
-            withdraw();
-            break;
-        case 'D':
-            deposit();
-            break;
-        case 'B':
-            viewBalance();
-            break;
-        default:
-            displayMessage("Invalid action. Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
-            break;
-    }
+  switch (action) {
+    case "W":
+      withdraw();
+      break;
+    case "D":
+      deposit();
+      break;
+    case "B":
+      viewBalance();
+      break;
+    case "Q":
+      quit();
+      break;
+    default:
+      displayMessage(
+        "Invalid action. <br><br> Choose an action: <br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)"
+      );
+      break;
+  }
 }
 
-function quit() {
-    displayMessage("Thank you for using the bank application. Goodbye!");
-    document.getElementById('input').style.display = 'none'; // Hide input field
-    document.querySelector('button').style.display = 'none'; // Hide submit button
-}
 
+// Function to withdraw money
 function withdraw() {
-    const amount = prompt("Enter amount to withdraw:");
+  const amount = prompt("Enter amount to withdraw:");
+  if (validateAmount(amount)) {
     const parsedAmount = parseFloat(amount);
-
-    if (isNaN(parsedAmount) || parsedAmount <= 0) {
-        displayMessage("Invalid amount. Please enter a positive number. Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
-        return;
-    }
-
     if (parsedAmount > balance) {
-        displayMessage("Insufficient funds. Your balance is " + balance.toFixed(2) + ". Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
+      displayMessage(
+        `Insufficient funds. Your balance is $${balance.toFixed(2)}. <br><br> Choose an action: <br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)`
+      );
     } else {
-        balance -= parsedAmount;
-        displayMessage("You withdrew " + parsedAmount.toFixed(2) + ". Your new balance is " + balance.toFixed(2) + ". Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
+      balance -= parsedAmount;
+      displayMessage(
+        `You withdrew $${parsedAmount.toFixed(2)}. <br> Your new balance is $${balance.toFixed(2)}. <br><br> Choose an action:<br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)`
+      );
     }
+  }
 }
 
+
+// Function to deposit money
 function deposit() {
-    const amount = prompt("Enter amount to deposit:");
+  const amount = prompt("Enter amount to deposit:");
+  if (validateAmount(amount)) {
     const parsedAmount = parseFloat(amount);
-
-    if (isNaN(parsedAmount) || parsedAmount <= 0) {
-        displayMessage("Invalid amount. Please enter a positive number. Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
-        return;
-    }
-
     balance += parsedAmount;
-    displayMessage("You deposited " + parsedAmount.toFixed(2) + ". Your new balance is " + balance.toFixed(2) + ". Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
+    displayMessage(
+      `You deposited $${parsedAmount.toFixed(2)}. <br> Your new balance is $${balance.toFixed(2)}. <br><br> Choose an action: <br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)`
+    );
+  }
 }
 
+
+// Function to view balance
 function viewBalance() {
-    displayMessage("Your current balance is " + balance.toFixed(2) + ". Choose W (Withdraw), D (Deposit), B (Balance), Q (Quit)");
+  displayMessage(
+    `Your current balance is $${balance.toFixed(2)}. <br><br> Choose an action: <br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)`
+  );
 }
 
+
+// Function to quit the banking app and remove the input box and heading
+function quit() {
+  displayMessage(
+    "Thank you for using the Bank of LorenTay. <br><br> We look forward to serving you again soon."
+  );
+  inputVisibility(false);
+  headingVisibility(false);
+}
+
+
+// Function to display messages
 function displayMessage(message) {
-    document.getElementById('message').textContent = message;
+  document.getElementById("message").innerHTML = message;
+}
+
+
+// Function to validate the amount and display "invalid amount" when it fails
+function validateAmount(amount) {
+  const parsedAmount = parseFloat(amount);
+  if (isNaN(parsedAmount) || parsedAmount <= 0) {
+    displayMessage(
+      "Invalid amount. Please try again. <br><br> Choose an action: <br> W (Withdraw), D (Deposit), B (Balance), Q (Quit)"
+    );
+    return false;
+  }
+  return true;
+}
+
+
+// Function to display "Welcome to the Bank of LorenTay" (except on quit)
+function inputVisibility(visible) {
+  const inputBox = document.getElementById("input");
+  const button = document.querySelector("button");
+  inputBox.style.display = visible ? "block" : "none";
+  button.style.display = visible ? "block" : "none";
+}
+
+
+// Function to hide "Welcome to the Bank of LorenTay" heading when the user quits the app
+function headingVisibility(visible) {
+  const heading = document.querySelector("h1");
+  heading.style.display = visible ? "block" : "none";
 }
