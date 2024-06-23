@@ -419,6 +419,10 @@ legend {
     font-weight: bold;
 }
 
+.select-preferences {
+    margin-bottom: 10px;
+} 
+
 /* checkbox styles */
 .checkbox-group {
     display: flex;

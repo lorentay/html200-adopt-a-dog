@@ -75,7 +75,7 @@ function addBlogPost(post) {
   console.log("Blog post added:", post.headline);
 }
 
-// Array of new blog posts to be added dynamically
+// New blog posts to be added dynamically using an array
 const newBlogPosts = [
   {
     id: "post-1",
