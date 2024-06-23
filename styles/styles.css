@@ -137,6 +137,7 @@ p {
     height: auto;
     margin-right: 1.25rem; 
 }
+
 .intro-text {
     max-width: 50%;
     flex: 1;
@@ -152,9 +153,18 @@ p {
 }
 .more-dogs-heading {
     margin-left: 1.25rem;
+    margin-top: 1.25rem;
 }
 .blog-heading {
     margin-left: 1.25rem;
+    margin-top: 1.25rem;
+}
+.contact-heading {
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+}
+.checkout-heading {
+    margin-top: 1.25rem;
 }
 
 /* dog cards styles */
