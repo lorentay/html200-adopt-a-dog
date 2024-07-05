@@ -1,0 +1,118 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: $background-color;
+}
+
+.rolodex-card {
+  @include frame-style;
+  background-color: $card-background;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    flex: 1;
+    min-width: 12.5rem;
+    box-sizing: border-box;
+
+    .profile-picture {
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      margin-bottom: 0.625rem;
+    }
+
+    .header-info {
+      text-align: center;
+
+      h2 {
+        margin: 0;
+        font-size: 1.25rem;
+        color: $primary-color;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: .8rem;
+        font-style: italic;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .right-column {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    min-width: 18.75rem;
+    box-sizing: border-box;
+
+    .info-box {
+      background-color: $info-box-background;
+      padding: 1.25rem;
+      border-radius: 0.625rem;
+      width: 100%;
+      box-sizing: border-box;
+
+      p {
+        margin: 0.625rem 0;
+        display: flex;
+        align-items: center;
+
+        .linkedin-icon {
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.313rem;
+        }
+
+        a {
+          color: $linkedin-blue; 
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 600px) {
+  .rolodex-card {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+
+    .left-column,
+    .right-column {
+      width: 100%;
+      padding: 0.625rem;
+      box-sizing: border-box;
+    }
+
+    .right-column {
+      .info-box {
+        text-align: center;
+        padding: 0.625rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

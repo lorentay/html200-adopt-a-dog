@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-style {
+  background-color: $card-background;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@mixin frame-style {
+  border: 1.25rem solid $frame-color;
+  padding: 10px;
+  box-sizing: border-box;
+}
