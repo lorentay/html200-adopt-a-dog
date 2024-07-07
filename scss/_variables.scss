@@ -1,8 +1,14 @@
-$primary-color: #333333; 
-$secondary-color: #666666; 
+// variables
+$primary-color: #333333;
+$secondary-color: #666666;
 $font-family: 'Arial, sans-serif';
 $background-color: #f0f0f0;
 $card-background: #ffffff;
-$frame-color: #d0e8f2; 
-$info-box-background: #f9f9f9; 
+$frame-color: #e2eff4; 
+$info-box-background: #fdfcfc; 
 $linkedin-blue: #3498db;
+
+// color functions
+$primary-lighter: lighten($primary-color, 30%);
+$secondary-darker: darken($secondary-color, 20%);
+

@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
+// Main styles
 body {
   font-family: $font-family;
   display: flex;
@@ -10,7 +11,7 @@ body {
   margin: 0;
   background-color: $background-color;
 }
-
+// Rolodex card
 .rolodex-card {
   @include frame-style;
   background-color: $card-background;

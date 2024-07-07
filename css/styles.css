@@ -9,7 +9,7 @@ body {
 }
 
 .rolodex-card {
-  border: 1.25rem solid #d0e8f2;
+  border: 1.25rem solid #e2eff4;
   padding: 0.625rem;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -57,7 +57,7 @@ body {
   box-sizing: border-box;
 }
 .rolodex-card .right-column .info-box {
-  background-color: #f9f9f9;
+  background-color: #fdfcfc;
   padding: 1.25rem;
   border-radius: 0.625rem;
   width: 100%;
